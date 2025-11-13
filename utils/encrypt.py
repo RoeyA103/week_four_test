@@ -52,5 +52,3 @@ def fence_decrypt(text):
     return new_text 
 
 
-
-

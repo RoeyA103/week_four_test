@@ -5,6 +5,7 @@ from typing import Literal
 import json
 from utils import encrypt , file_handler , statics_handler
 
+
 app = FastAPI()
 
 class Ceasar(BaseModel):
@@ -14,6 +15,7 @@ class Ceasar(BaseModel):
 
 class Fence(BaseModel):
     text : str
+
 
 @app.get('/test')
 def test(): 
