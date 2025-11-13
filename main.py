@@ -48,7 +48,7 @@ def fence(data:str):
 @app.post("/fence/decrypt")
 def fence(data:Fence):
 
-    resolt = encrypt.fence_decrypt(data)
+    resolt = encrypt.fence_decrypt(data.text)
 
     return {"msg":"The data was decrypted successfully.",
             "decrypted" : resolt }

@@ -42,16 +42,15 @@ def fence_encrypt(text):
     return new_text 
 
 def fence_decrypt(text):
-    first = ""
-    last = ""
-    index = 0
-    for index , char in enumerate(text):
-        if index % 2 == 0:
-            first += char
-        else:
-            last += char
-    new_text = first + last
+    new_text = ""
+    len_t = len(text) // 2
+    for i in range(len_t):
+        char1 = text[i]
+        char2 = text[len_t+i]
+        new_text += char1 + char2
 
     return new_text 
+
+
 
 
